@@ -1,0 +1,39 @@
+{
+  "name": "dreambot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "npx tsc",
+    "watch": "npx tsc -w",
+    "start": "node dist/index.js",
+    "dev": "run-s build start",
+    "watch:start": "npx tsc-watch --onSuccess \"node ./dist/index.js\"",
+    "format": "prettier --write \"src/**/*.ts\""
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@napi-rs/canvas": "^0.1.28",
+    "@sapphire/decorators": "^5.0.0",
+    "@sapphire/discord.js-utilities": "^4.11.3",
+    "@sapphire/fetch": "^2.4.1",
+    "@sapphire/framework": "^3.1.1",
+    "@sapphire/plugin-editable-commands": "^1.2.2",
+    "@sapphire/plugin-logger": "^2.2.3",
+    "@sapphire/plugin-subcommands": "^3.2.0",
+    "@sapphire/time-utilities": "^1.7.5",
+    "@sapphire/ts-config": "^3.3.4",
+    "@sapphire/type": "^2.2.4",
+    "@sapphire/utilities": "^3.8.0",
+    "cheerio": "^1.0.0-rc.12",
+    "common-tags": "^1.8.2",
+    "discord.js": "^13.10.3",
+    "dotenv": "^16.0.1"
+  },
+  "type": "module",
+  "devDependencies": {
+    "@types/common-tags": "^1.8.1",
+    "typescript": "^4.8.2"
+  }
+}
